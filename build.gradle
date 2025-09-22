@@ -6,7 +6,7 @@ plugins {
 
 group = 'com.koreait'
 version = '0.0.1-SNAPSHOT'
-description = 'short_pj_25_09'
+description = 'Short_pj_25_09'
 
 java {
     toolchain {
@@ -25,12 +25,17 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    runtimeOnly 'com.mysql:mysql-connector-j'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+
+
 }
 
 tasks.named('test') {

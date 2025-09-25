@@ -81,6 +81,6 @@ jobs:
           comment: Deploy
           command: |
             mkdir -p /dockerProjects/${도커이미지명}
-            curl -o /dockerProjects/${도커이미지명}/zero_downtime_deploy.py https://raw.githubusercontent.com/${깃허브-아이디}/${깃허브-리포지터리명}/master/infraScript/zero_downtime_deploy.py # 브랜치 주의
+            curl -o /dockerProjects/${도커이미지명}/zero_downtime_deploy.py https://raw.githubusercontent.com/${깃허브-아이디}/${깃허브-리포지터리명}/main/infraScript/zero_downtime_deploy.py # 브랜치 주의
             chmod +x /dockerProjects/${도커이미지명}/zero_downtime_deploy.py
             /dockerProjects/${도커이미지명}/zero_downtime_deploy.py
